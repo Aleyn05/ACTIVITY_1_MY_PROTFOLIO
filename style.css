@@ -1,48 +1,103 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url("https: //fonts.google.com/specimen/Poppins?query=Poppins");
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Nunito', sans-serif ;
+    font-family: 'Poppins', sans-serif ;
 }
 
 /*Home Style*/
 
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 50px 10%;
-    background: transparent;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-
+nav {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     padding: 20px 10%;
+     background: transparent;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     z-index: 100;
 }
 
-.logo {
-    font-size: 25px;
+nav .mainMenu {
+    display: flex;
+    list-style: none;
+}
+
+nav .mainMenu li a {
+    font-size: 18px;
+    color: #E7F6F2;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+nav .mainMenu li a:hover{
+        color: #A5C9CA;
+}
+
+nav .openMenu {
+        font-size: 2rem;
+        margin: 20px;
+        display: none;
+        cursor: pointer;
+}
+nav .openMenu {
+    color: #E7F6F2;
+}
+
+nav .mainMenu .closeMenu{
+    color: #E7F6F2;
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+nav .logo {
+    font-size: 18px;
     color: #2C3333;
     text-decoration: none;
-    font-weight: 700;
+    font-weight: 600;
+    background: transparent;
 }
 
-.logo:hover {
-    cursor: default;
-}
 
-.navbar a{
-    font-size: 18px;
-    color:#E7F6F2;
-}
+@media (max-width: 800px) {
+    nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #2C3333;
+        transition: top 1s ease 0s;
+        display: none;
+    }
 
-.navbar a:hover,
-.navbar a.active {
-    color: #A5C9CA;
-}
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    nav .openMenu {
+        display: block;
+    }
+
+    nav .mainMenu li a:hover {
+        background: none;
+        color: #A5C9CA;
+    }
+  }
 
 .home{
     height: 100vh;
@@ -77,7 +132,7 @@
 }
 
 .home-content h1{
-    font-size: 40px;
+    font-size: 35px;
     line-height: 1.2;
 
 }
@@ -85,8 +140,8 @@
 .home-content h3 {
     font-size: 23px;
     color: transparent;
-    -webkit-text-stroke: .7px #E7F6F2;
-    background-image: linear-gradient(#395B64,#395B64);
+    -webkit-text-stroke: .7px #395B64;
+    background-image: linear-gradient(#A5C9CA,#A5C9CA );
     background-repeat: no-repeat;
     -webkit-background-clip: text;
     background-position: -410px 0;
