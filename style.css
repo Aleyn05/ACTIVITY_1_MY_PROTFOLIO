@@ -7,33 +7,36 @@
     font-family: 'Nunito', sans-serif ;
 }
 
-.header{
+/*Home Style*/
+
+.header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 10%;
+    padding: 50px 10%;
     background: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+
 }
 
-.logo{
+.logo {
     font-size: 25px;
     color: #2C3333;
     text-decoration: none;
     font-weight: 700;
 }
 
+.logo:hover {
+    cursor: default;
+}
+
 .navbar a{
     font-size: 18px;
-    color: #E7F6F2;
-    text-decoration: none;
-    font-weight: 500;
-    margin-left: 35px;
-    transition: .3s;
+    color:#E7F6F2;
 }
 
 .navbar a:hover,
