@@ -9,19 +9,25 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+        integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
 </head>
 
  <body>
-    
-    <header class="header">
-        <a href="#" class="logo">A.Francisco</a>
-        <nav class="navbar">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Experience</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contacts</a></li>
-        </nav>
-    </header>
+    <nav>
+        <div class="logo">
+            <h1>A.Francisco</h1>
+        </div>
+        <div class="openMenu"><i class="fa fa-bars"></i></div>
+        <ul class="mainMenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Experience</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contacts</a></li>
+            <div class="closeMenu"><i class="fa fa-times"></i></div>
+        </ul>
+    </nav>
+
 
     <section class="home">
         <div class="home-image">
@@ -34,12 +40,12 @@
             <p>3rd year student in 
             <br>Technological University of the Philippines - Manila</p>
             <div class="home-sci">
-                <a href="#"><i class='bx bxl-facebook'></i></a>
-                <a href="#"><i class='bx bxl-github'></i></a>
-                <a href="#"><i class='bx bxl-gmail'></i></a>
+                <a href="#" onclick="location.href='https://www.facebook.com/baleyneeegrace05/'" ><i class='bx bxl-facebook'></i></a>
+                <a href="#" onclick="location.href='https://github.com/Aleyn05'" ><i class='bx bxl-github'></i></a>
+                <a href="#" onclick="location.href='https://mail.google.com/mail/u/2/#inbox'"><i class='bx bxl-gmail'></i></a>
             </div>
 
-            <a href="#" class="btn">Download CV</a>
+            <a href="#" class="btn" onclick="window.open('PICTURES&ICONS/Curriculum Vitae.png')">Download CV</a>
         </div>
     </section>
     <script src="script.js"></script>
