@@ -29,6 +29,11 @@
         background: none;
         color: #A5C9CA;
     }
+
+    .home{
+        display: inline-flex;
+    }
+
 }
 
 @media screen and (max-width: 1400px) {
@@ -39,5 +44,86 @@
 
     .about-containers {
         flex-wrap: wrap;
+    }
+
+    .icon-arrow1,
+    .icon-arrow2,
+    .icon-arrow3,
+    .icon-arrow4 {
+            display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    #contact,
+    footer {
+        height: 40vh;
+    }
+
+    .home {
+       margin-right: auto;
+       margin-left: auto;
+    }
+
+    .about-me{
+        font-size: 0.5rem;
+        display: flex;
+    }
+
+    article {
+        font-size: 1rem;
+    }
+
+    footer nav {
+        height: fit-content;
+        margin-bottom: 2rem;
+    }
+
+    .about-containers,
+    .contact-info-upper-container,
+    .btn-container {
+        flex-wrap: wrap;
+    }
+
+    .contact-info-container {
+        margin: 0;
+    }
+
+    .contact-info-container p,
+    .mainMenu li a {
+        font-size: 1rem;
+    }
+
+    .about-title {
+        font-size: 1.5rem;
+    }
+
+    .logo {
+        font-size: 1rem;
+    }
+
+    .mainMenu {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+
+    .section__pic-container {
+        width: auto;
+        height: 46vw;
+        justify-content: center;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .text-container {
+        text-align: justify;
+    }
+
+    .section__text_p2 {
+        font-size: 1.25rem;
     }
 }
