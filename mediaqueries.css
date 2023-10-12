@@ -1,4 +1,4 @@
-@media (max-width: 800px) {
+@media (max-width: 1400px) {
     nav .mainMenu {
         height: 100vh;
         position: fixed;
@@ -28,5 +28,72 @@
     nav .mainMenu li a:hover {
         background: none;
         color: #A5C9CA;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    #profile {
+        height: 83vh;
+        margin-bottom: 6rem;
+    }
+
+    .about-containers {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    #contact,
+    footer {
+        height: 40vh;
+    }
+
+    #profile {
+        height: 83vh;
+        margin-bottom: 0;
+    }
+
+    article {
+        font-size: 1rem;
+    }
+
+    footer nav {
+        height: fit-content;
+        margin-bottom: 2rem;
+    }
+
+    .contact-info-upper-container{
+        flex-wrap: wrap;
+    }
+
+    .contact-info-container {
+        margin: 0;
+    }
+
+    .contact-info-container p,
+    .nav-links li a {
+        font-size: 1rem;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+
+    .title-contact, 
+    .title-project, 
+    .about-title,
+    .skills-text{
+        font-size: 2rem;
+    }
+
+    .text-container {
+        text-align: justify;
     }
 }
