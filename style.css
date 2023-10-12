@@ -10,16 +10,16 @@
 /*Home Style*/
 
 nav {
-     position: fixed;
-     top: 0;
-     left: 0;
-     width: 100%;
-     padding: 20px 10%;
-     background: transparent;
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
 }
 
 nav .mainMenu {
@@ -125,6 +125,7 @@ nav .logo {
     max-width: 500px;
 
 }
+
 .home-content{
     max-width: 600px;
     color:#E7F6F2;
@@ -208,4 +209,82 @@ nav .logo {
 
 .btn:hover{
     box-shadow: none;
+}
+
+/* About Me */
+
+.About {
+    height: 100vh;
+    background: linear-gradient(-90deg, #E7F6F2 65%, #2C3333 35%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.about-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    background: #E7F6F2;
+    border-radius: 20%;
+    border: 25px solid #2C3333;
+    outline: 25px solid #E7F6F2;
+}
+
+.about-pic img{
+    position: relative;
+    max-width: 500px;
+}
+
+.about-me {
+    max-width: 600px;
+    color: #2C3333;
+    text-align: right;
+}
+
+.about-me h1 {
+    font-size: 50px;
+    color: transparent;
+    -webkit-text-stroke: 1.5px #2C3333;
+    background-image: linear-gradient(#395B64, #395B64);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -410px 0;
+    animation: animateText 6s linear infinite;
+
+}
+
+.about-me h4{
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.about-me p{
+    font-size: 12px;
+    font-weight: ;
+    margin-top: 20px;
+}
+
+.about-educ-icon {
+    margin: 25px 0 40px;
+
+}
+
+.about-educ-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #2C3333;
+    border-radius: 20%;
+    font-size: 30px;
+    color: #2C3333;
+    text-decoration: none;
+    margin-left: 12px;
+
 }
