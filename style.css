@@ -6,6 +6,14 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif ;
 }
+html {
+    scroll-behavior: smooth;
+}
+
+a,
+.btn {
+    transition: all 300ms ease;
+}
 
 /*Home Style*/
 
@@ -64,40 +72,6 @@ nav .logo {
     font-weight: 600;
     background: transparent;
 }
-
-
-@media (max-width: 800px) {
-    nav .mainMenu {
-        height: 100vh;
-        position: fixed;
-        top: 0px;
-        right: 0px;
-        left: 0px;
-        z-index: 10;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: #2C3333;
-        transition: top 1s ease 0s;
-        display: none;
-    }
-
-    nav .mainMenu .closeMenu {
-        display: block;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-    }
-
-    nav .openMenu {
-        display: block;
-    }
-
-    nav .mainMenu li a:hover {
-        background: none;
-        color: #A5C9CA;
-    }
-  }
 
 .home{
     height: 100vh;
@@ -211,9 +185,17 @@ nav .logo {
     box-shadow: none;
 }
 
+.icon-arrow1 {
+    position: absolute;
+    right: 0px;
+    width: 60px;
+    margin-top: 40rem;
+    margin-right: 10rem;
+}
+
 /* About Me */
 
-.About {
+#about {
     height: 100vh;
     background: linear-gradient(-90deg, #E7F6F2 65%, #2C3333 35%);
     display: flex;
@@ -253,7 +235,7 @@ nav .logo {
     background-repeat: no-repeat;
     -webkit-background-clip: text;
     background-position: -410px 0;
-    animation: animateText 6s linear infinite;
+    animation: animateText 10s linear infinite;
 
 }
 
@@ -268,12 +250,12 @@ nav .logo {
     margin-top: 20px;
 }
 
-.about-educ-icon {
+.about-me .bxs-graduation {
     margin: 25px 0 40px;
 
 }
 
-.about-educ-icon {
+.about-me .bxs-graduation {
     display:inline-flex;
     justify-content: center;
     align-items: center;
@@ -289,9 +271,17 @@ nav .logo {
 
 }
 
+.icon-arrow2 {
+    position: absolute;
+    right: 0px;
+    width: 60px;
+    margin-top: 40rem;
+    margin-right: 10rem;
+}
+
 /* Skills */
 
-.skills{
+#skills{
     height: 110vh;
     background: #2C3333;
     justify-content: center;
@@ -308,12 +298,12 @@ nav .logo {
 .skills-text h1 {
     font-size: 70px;
     color: transparent;
-    -webkit-text-stroke: 1.5px #E7F6F2;
+    -webkit-text-stroke: 1.5px #A5C9CA;
     background-image: linear-gradient(#395B64, #395B64);
     background-repeat: no-repeat;
     -webkit-background-clip: text;
     background-position: -410px 0;
-    animation: animateText 6s linear infinite;
+    animation: animateText 10s linear infinite;
 }
 
 .article-container{
@@ -336,3 +326,61 @@ article .bxs-check-square {
     align-items: center;
     cursor: default;
 }
+
+/* Project */
+
+#projects {
+    height: 250vh;
+    background: #2C3333;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+    border: 20px solid #A5C9CA;
+}
+
+.title-project{
+    text-align: center;
+    font-size: 70px;
+    color: transparent;
+    -webkit-text-stroke: 1.5px #A5C9CA;
+    background-image: linear-gradient(#395B64, #395B64);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -410px 0;
+    animation: animateText 10s linear infinite;
+}
+
+.project-img1 {
+    border-radius: 1rem;
+    width: 50%;
+    height: 50%;
+}
+
+.project-img2 {
+    border-radius: 1rem;
+    width: 50%;
+    height: 50%;
+}
+
+.project-img3 {
+    border-radius: 1rem;
+    width: 50%;
+    height: 50%;
+}
+
+.project-title {
+    text-align: center;
+    margin: 1rem;
+    color: #A5C9CA;
+}
+
+.bxs-down-arrow{
+    color: #A5C9CA;
+    font-size: 60px;
+    position: absolute;
+    right: 0px;
+    width: 300px;
+    padding: 10px;
+}
+
+/* Contacts */
