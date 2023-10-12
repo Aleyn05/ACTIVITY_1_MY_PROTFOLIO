@@ -258,13 +258,13 @@ nav .logo {
 }
 
 .about-me h4{
-    font-size: 15px;
+    font-size: 18px;
     margin-top: 20px;
 }
 
 .about-me p{
-    font-size: 12px;
-    font-weight: ;
+    font-size: 14px;
+    font-weight: 600;
     margin-top: 20px;
 }
 
@@ -274,17 +274,65 @@ nav .logo {
 }
 
 .about-educ-icon {
-    display: inline-flex;
+    display:inline-flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     background: transparent;
     border: 2px solid #2C3333;
     border-radius: 20%;
-    font-size: 30px;
+    font-size: 40px;
     color: #2C3333;
     text-decoration: none;
     margin-left: 12px;
 
+}
+
+/* Skills */
+
+.skills{
+    height: 110vh;
+    background: #2C3333;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+    border: 20px solid #A5C9CA;
+    
+}
+.skills-text{
+    margin-top: auto;
+    text-align: center;
+
+}
+.skills-text h1 {
+    font-size: 70px;
+    color: transparent;
+    -webkit-text-stroke: 1.5px #E7F6F2;
+    background-image: linear-gradient(#395B64, #395B64);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -410px 0;
+    animation: animateText 6s linear infinite;
+}
+
+.article-container{
+    font-size: 15px;
+    text-align: center;
+}
+
+article h3{
+    color: #E7F6F2;
+}
+
+article p{
+    color: #A5C9CA;
+}
+
+article .bxs-check-square {
+    font-size: 20px;
+    color: #A5C9CA;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
 }
