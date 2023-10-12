@@ -18,12 +18,12 @@ a,
 /*Home Style*/
 
 nav {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
     padding: 20px 10%;
-    background: transparent;
+    background: linear-gradient(-90deg, #2C3333 65%, #E7F6F2 35%);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,6 +46,7 @@ nav .mainMenu li a {
 
 nav .mainMenu li a:hover{
         color: #A5C9CA;
+        text-decoration: underline;
 }
 
 nav .openMenu {
@@ -384,3 +385,71 @@ article .bxs-check-square {
 }
 
 /* Contacts */
+
+
+#contacts {
+    height: 30vh;
+    background: #A5C9CA;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.title-contact{
+    text-align: center;
+    font-size: 40px;
+    color: #2C3333;
+}
+
+.contact-info-upper-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 1rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: #2C3333;
+    background: (250, 250, 250);
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+
+.contact-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+.contact-info-container li a {
+    list-style-type: none;
+    font-size: 18px;
+    color: #395B64;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 10px;
+    transition: .3s;
+}
+
+.contact-info-container li a:hover {
+    color: #E7F6F2;
+    text-decoration: underline;
+}
+
+.fb-icon {
+    cursor: default;
+}
+
+.email-icon {
+    cursor: default;
+}
+
+/* FOOTER SECTION */
+
+footer {
+    background:#A5C9CA;
+    height: 30vh;
+}
+
+footer p {
+    text-align: center;
+}
