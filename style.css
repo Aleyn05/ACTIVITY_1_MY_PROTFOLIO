@@ -328,6 +328,14 @@ article .bxs-check-square {
     cursor: default;
 }
 
+.icon-arrow3 {
+    position: absolute;
+    right: 0px;
+    width: 60px;
+    margin-top: 2rem;
+    margin-right: 10rem;
+}
+
 /* Project */
 
 #projects {
@@ -375,13 +383,12 @@ article .bxs-check-square {
     color: #A5C9CA;
 }
 
-.bxs-down-arrow{
-    color: #A5C9CA;
-    font-size: 60px;
+.icon-arrow4 {
     position: absolute;
     right: 0px;
-    width: 300px;
-    padding: 10px;
+    width: 60px;
+    margin-top: 5rem;
+    margin-right: 10rem;
 }
 
 /* Contacts */
